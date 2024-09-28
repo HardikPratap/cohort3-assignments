@@ -4,7 +4,32 @@
 */
 
 function isPalindrome(str) {
+
+  let newStr="";
+
+  for (let char of str) {
+    if ((char >= 'a' && char <= 'z') || (char >= 'A' && char <= 'Z') || (char >= '0' && char <= '9')) {
+        newStr += char.toLowerCase();
+    }
+  }
+  newStr=newStr.split("");
+  let pointer1=0;
+  let pointer2=newStr.length-1;
+
+
+  while(pointer2>pointer1){
+    if(newStr[pointer1]==newStr[pointer2]){
+      pointer1++;
+      pointer2--;
+    }
+    else{
+      return false;
+    }
+  }
+  // console.log("true")
   return true;
 }
+
+isPalindrome("level");
 
 module.exports = isPalindrome;
