@@ -5,9 +5,8 @@ const app = express();
 
 function logRequests(req, res, next) {
     // write the logic for request log here
- const { method, url,ip } = req;
- const time= new Date().toISOString();
- console.log(method, url, ip);
+    const log = `${req.method} ${req.url} - ${new Date().toISOString()}`;
+    console.log(log);
   next();
 }
 

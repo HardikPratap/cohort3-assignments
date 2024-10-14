@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1728592860173" clover="3.2.0">
-  <project timestamp="1728592860173" name="All files">
-    <metrics statements="20" coveredstatements="20" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1" elements="23" coveredelements="23" complexity="0" loc="20" ncloc="20" packages="1" files="1" classes="1"/>
-    <file name="02-logIncomingRequests.js" path="/Users/hardikpratap/Desktop/VSCODE/Cohort-3/web-dev/cohort3-assignments/week-4/middlewares/02-logIncomingRequests.js">
-      <metrics statements="20" coveredstatements="20" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+<coverage generated="1728935299070" clover="3.2.0">
+  <project timestamp="1728935299070" name="All files">
+    <metrics statements="19" coveredstatements="19" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1" elements="22" coveredelements="22" complexity="0" loc="19" ncloc="19" packages="1" files="1" classes="1"/>
+    <file name="02-logIncomingRequests.js" path="/Users/hardikpratap/Desktop/VSCODE/Cohort-3/cohort3-assignments/week-4/middlewares/02-logIncomingRequests.js">
+      <metrics statements="19" coveredstatements="19" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
       <line num="3" count="1" type="stmt"/>
@@ -15,15 +15,14 @@
       <line num="9" count="2" type="stmt"/>
       <line num="10" count="2" type="stmt"/>
       <line num="11" count="2" type="stmt"/>
-      <line num="12" count="2" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
       <line num="13" count="1" type="stmt"/>
       <line num="14" count="1" type="stmt"/>
-      <line num="15" count="1" type="stmt"/>
-      <line num="16" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="15" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="16" count="1" type="stmt"/>
       <line num="17" count="1" type="stmt"/>
       <line num="18" count="1" type="stmt"/>
       <line num="19" count="1" type="stmt"/>
-      <line num="20" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
