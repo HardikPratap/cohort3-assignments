@@ -9,6 +9,11 @@ const users=[];
 const SECRET_KEY="Hardik"
 
 app.use(express.json())
+
+app.get("/", (req, res) => {
+    res.redirect("/signup"); // Redirects to the signup page
+});
+
 app.use(express.static(path.join(__dirname ,"..","..","frontend")));
 
 
@@ -30,9 +35,6 @@ function auth(req,res,next){
 
 }
 
-app.get("/", (req, res) => {
-    res.redirect("/signup"); // Redirects to the signup page
-});
 
 app.get("/signup",(req,res)=>{
     
