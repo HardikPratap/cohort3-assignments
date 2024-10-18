@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+</head>
+<body>
+    <h1>Sign In</h1>
+    <div>
+        <input id="username" type="text" placeholder="Enter username" required>
+        <input id="password" type="password" placeholder="Enter password" required>
+        <button onclick="signin()">Sign In</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+    <script>
+        async function signin() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            try {
+                const response = await axios.post("http://localhost:3000/signin", {
+                    username: username,
+                    password: password
+                });
+
+                if (response.data.message === "Signed in Successfully") {
+                    // Save the token in localStorage
+                    localStorage.setItem('token', response.data.token);
+
+                    // Redirect to the index.html page
+                    window.location.href = "/index.html";
+                } else {
+                    alert(response.data.message);
+                }
+            } catch (error) {
+                console.error("Error during signin:", error);
+                alert("An error occurred during sign-in. Please try again.");
+            }
+        }
+    </script>
+</body>
+</html>
