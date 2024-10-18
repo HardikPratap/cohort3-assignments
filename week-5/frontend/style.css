@@ -1,1 +1,32 @@
   /* start from here */
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .heading{
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+  }
+
+  .add-items{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  input{
+    border: 2px solid black;
+    width: 20rem;
+    font-size: 20px;
+  }
+
+  #add-tasks{
+    padding: .5rem 1rem;
+    font-size: 20px;
+    border-radius: 10px;
+  }
